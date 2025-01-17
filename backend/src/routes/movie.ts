@@ -6,6 +6,7 @@ const router = express.Router();
 
 // Create
 router.post('/', async (req: Request, res: Response) => {
+
     try {
       const movie = new Movie(req.body);
       const savedMovie = await movie.save();

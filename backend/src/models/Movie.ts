@@ -1,4 +1,5 @@
 import mongoose, { Schema, Document } from 'mongoose';
+import { format } from 'date-fns';
 
 interface IMovie extends Document {
   title: string;
